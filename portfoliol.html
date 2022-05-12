@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body class="body">
-      <header class="page-header">
+    <header class="header">
       <div class="container header-container">
       <a class="logo text-list" href="">Web<span class="logo-web">Studio</span></a>
       <nav>
         <ul class="site-nav list">
-          <li class="item"><a href="index.html" class="link text-list">Студия</a></li>
-          <li class="item"><a href="portfoliol.html" class="link current text-list">Портфолио</a></li>
-          <li class="item"><a href="" class="link text-list">Контакты</a></li>
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link text-list">Студия</a></li>
+          <li class="site-nav__item"><a href="portfoliol.html" class="site-nav__link current text-list">Портфолио</a></li>
+          <li class="site-nav__item"><a href="" class="site-nav__link text-list">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contact-item list">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="link-cont text-list">
-            <svg class="icon-header" width="16" height="12">
+      <ul class="connect list">
+        <li class="connect__item">
+          <a href="mailto:info@devstudio.com" class="connect__link text-list">
+            <svg class="connect__icon" width="16" height="12">
                       <use href="./imeges/icons/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="link-cont text-list">
-               <svg class="icon-header" width="16" height="12">
+        <li class="connect__item">
+          <a href="tel:+380961111111" class="connect__link text-list">
+               <svg class="connect__icon" width="16" height="12">
                       <use href="./imeges/icons/symbol-defs.svg#icon-Vector"></use>
                </svg>+38 096 111 11 11
           </a>
@@ -184,10 +189,11 @@
     </main>
     
 
-    <!-- footer -->
-  <footer class="footer">
-    <div class="footer-cont">
-        <div class="studio-section-footer">    
+<!-- footer -->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="studio-section-footer">    
           <a class="logo-footer text-list" href="">Web<span class="logo-studio">Studio</span></a>
           <address class="addres-global">
             <p class="address-item">г. Киев, пр-т Леси Украинки, 26</p>
@@ -199,7 +205,7 @@
     </div>
 
     <div class="Join-soc">
-      <a class="join-title">присоединяйтесь</a>
+      <h3 class="join-title">присоединяйтесь</h3>
       <ul class="footer-soc list">
              <li class="footer-soc-item">
                 <a class="footer-soc-link" href="">
@@ -233,7 +239,7 @@
                 </a>
               </li>
             </ul>
-      </div>
+        </div>
 
       <div class="suscribe-container">
           <p class="ft-input-text">Подпишитесь на рассылку</p>
@@ -242,17 +248,22 @@
           <input class="ft-input-mail" 
                  type="email"
                  id="footer-mail"
-                 placeholder="E-mail" > 
+                 > 
                 
           <label class="" for="footer-mail"></label>
-          <button class="ft-button button" type="submit">Подписаться
+          <button class="footer-mail btn--ft" type="submit" >Подписаться
              <svg class="footer-suscraibe-icon" width="24" height="24">
                   <use class="footer-soc-icon" href="./imeges/icons/symbol-defs.svg#icon-telegram"></use>
               </svg>
           </button>
         </form>
       </div>
-    </div> 
+
+
+      </div>  
+  
+      
+    
     </footer>
 
   </body>
